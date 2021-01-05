@@ -106,7 +106,7 @@ export default function SinglePost() {
                                     </span>
                                 </div>
 
-                            <p className="fontbod" className="prose lg:prose-xl md:prose-lg max-w-full">
+                            <p className="fontbod prose lg:prose-xl md:prose-lg max-w-full">
                                 <BlockContent 
                                 blocks={singlePost.body} 
                                 projectId="ylbahs1m" 

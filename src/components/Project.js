@@ -43,7 +43,7 @@ export default function Project() {
 
                     <img class="blogImg"
                         src={project.mainImage.asset.url}
-                        alt="Blog Image"
+                        alt="Blog"
                     />
 
                         <h3 className="fonthead text-3xl mb-2">

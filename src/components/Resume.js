@@ -89,7 +89,7 @@ export default function Resume(){
                                         </div>
                                         <div class="cvimagestack">
                                             <img src={resume.cvImage1.asset.url}
-                                            alt="CV Image showing my work"
+                                            alt="showing my work"
                                             />
                                         </div>
                                     </div>

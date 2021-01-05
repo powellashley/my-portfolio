@@ -34,7 +34,7 @@ export default function Home() {
                     <div class="homecontainer">
                         <img class="homepgimage"
                             src={home.homepgImage.asset.url}
-                            alt="picture of me"
+                            alt="of me"
                         />
                         <div class="homepgtextbox">
                             <h1 class="homehead">
