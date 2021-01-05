@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .homepgimage, .homepgtextbox {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}

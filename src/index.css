@@ -1,13 +1,501 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
+@import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Thasadith&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.fonthead {
+  font-family: 'Baskervville', 'serif';
+  font-weight: 700;
+  color: #2E313C;
+}
+
+.fontheadcream {
+  font-family: 'Baskervville', 'serif';
+  font-weight: 700;
+  color: #EFEDEA;
+}
+
+.fontbod {
+  font-family: 'Roboto', 'sans-serif';
+  font-weight: 400;
+  color: #2E313C;
+}
+
+.fontbodcream {
+  font-family: 'Roboto', 'sans-serif';
+  font-weight: 400;
+  color: #EFEDEA;
+}
+
+.fontbodlight {
+  font-family: 'Roboto', 'sans-serif';
+  font-weight: 100;
+  color: #2E313C;
+}
+
+.fontbodbold {
+  font-family: 'Roboto', 'sans-serif';
+  font-weight: 700;
+  color: #2E313C;
+}
+
+.fontbodboldcream {
+  font-family: 'Roboto', 'sans-serif';
+  font-weight: 700;
+  color: #EFEDEA;
+}
+
+.prose img {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.home-name {
+  font-size: 60px;
+}
+
+.Navigation {
+  background-color: #EFEDEA;
+  color: #2E313C;
+}
+
+.Socials::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.socialcolumn {
+  float: left;
+  width: 45px;
+  height: auto;
+  padding: 5px;
+}
+
+.homecontainer {
+  width: 100%;
+  position: relative;
+  text-align: left;
+  background-color: #ffffff;
+  overflow: auto;
+  margin-bottom: 200px;
+}
+
+.homepgimage {
+  width: 50%;
+  margin-bottom: 40px;
+  height: auto;
+  margin-left: 60px;
+  margin-top: 40px;
+}
+
+.homepgtextbox {
+  position: absolute;
+  margin: 30px;
+  padding: 20px;
+  padding-bottom: 50px;
+  margin-left: 50%;
+  margin-right: 60px;
+  max-width: 60%;
+  top: 10%;
+  background-color: #EFEDEA;
+  color: #2E313C;
+}
+
+@media screen and (max-width: 600px) {
+  .homepgtextbox {
+    position: relative;
+    float: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .homepgimage {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+.homehead {
+  font-size: 4vw;
+  font-family: 'Baskervville', 'serif';
+  font-weight: 700;
+  color: #2E313C;
+}
+
+.homebod {
+  font-family: 'Roboto', 'sans-serif';
+  font-weight: 400;
+  color: #2E313C;
+}
+
+.button {
+  background-color: #2E313C;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  font-size: 1.7vw;
+  font-family: 'Baskervville', 'serif';
+  font-weight: 700;
+}
+
+.blue {
+  color: #2E313C;
+}
+
+.backgroundblue {
+  background-color: #2E313C;
+}
+
+.cream {
+  color: #EFEDEA;
+}
+
+.backgroundcream {
+  background-color: #EFEDEA;
+}
+
+.aboutmecontainer {
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  position: relative;
+  font-family: 'Baskervville', 'serif';
+  font-weight: 700;
+  color: #2E313C;
+  background-color: #EFEDEA;
+}
+
+.aboutbottom {
+  padding-bottom: 30%;
+}
+
+.aboutmepgImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: auto;
+  border: 5px solid #ffffff;
+}
+
+.aboutmeheader {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.5vw;
+}
+
+.aboutmefooter {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.5vw;
+}
+
+.aboutblbody {
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 40px;
+  font-size: 18px;
+  background-color: #2E313C;
+  color: #EFEDEA;
+  font-family: 'Roboto', 'sans-serif';
+}
+
+.aboutbody {
+  font-size: 18px;
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: #EFEDEA;
+}
+
+.aboutbody2 {
+  font-size: 18px;
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 30px;
+  background-color: #EFEDEA;
+}
+
+.aboutcolumn {
+  float: left;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  width: 33.33%;
+  background-color: #2E313C;
+  color: #EFEDEA;
+}
+
+@media screen and (max-width: 600px) {
+  .aboutcolumn {
+    width: 100%;
+  }
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  position: fixed;
+  height: auto;
+  min-height: 230px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 10px;
+  margin-bottom: 0px;
+  background-color: #2E313C;
+  color: #EFEDEA;
+}
+
+.body {
+  position: relative;
+  min-height: 100%;
+  margin-bottom: 230px;
+}
+
+.portfoliocolumn {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .portfoliocolumn {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.portfoliocolumn2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .portfoliocolumn2 {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.blogfooter {
+  background-color: #EFEDEA;
+  font-family: 'Baskervville', 'serif';
+  font-weight: 700;
+  font-size: 20px;
+  color: #2E313C;
+  margin: 40px;
+  height: 160px;
+  padding: 20px;
+  margin-bottom: 230px;
+  text-align: center;
+}
+
+.portfoliocontainer {
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.portfolioimgcaption {
+  font-size: 18px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2E313C;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.portfoliobody {
+  position: relative;
+  min-height: 100%;
+  margin-top: 40px;
+  margin-bottom: 230px;
+  background-color: #ffffff;
+}
+
+.portfolioswankypad {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 100%;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  font-size: 18px;
+  padding: 15px;
+  text-align: center;
+  font-family: 'Roboto', 'sans-serif';
+  font-weight: 400;
+  color: #2E313C;
+}
+
+.blogImg{
+  float: right;
+  height: 300px;
+  padding: 10px;
+}
+
+.blogbody {
+  position: relative;
+  min-height: 100%;
+  margin-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #ffffff;
+}
+
+.postbody {
+  position: relative;
+  min-height: 100%;
+  margin-top: 40px;
+  background-color: #ffffff;
+}
+
+.nav2 {
+  padding-top: 15px;
+}
+
+.nav3 {
+  flex: 100%;
+}
+
+.backgroundwhite {
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+  min-height: 100%;
+}
+
+@media screen and (max-width: 400px) {
+  .nav2 {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav3 {
+    float: none;
+    width: 100%;
+  }
+}
+
+.loader {
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  right: 45%;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #2E313C;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* CV */
+
+.CvBackground {
+  position: relative;
+  min-height: 100%;
+  margin-bottom: 230px;
+  background-color: #ffffff;
+}
+
+.CvPage {
+  margin-top: 30px;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  margin-right: 5%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: #2E313C;
+  background-color: #EFEDEA;
+}
+
+.cvrow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cvimagestack {
+  width: 95%;
+  height: auto;
+}
+
+.cvside {
+  flex: 45%; /* Set the width of the sidebar */
+  padding: 20px; /* Some padding */
+  padding-left: 30px;
+}
+
+.cvmainhead {
+  flex: 55%;
+  padding: 20px;
+  padding-right: 30px;
+  text-align: right;
+}
+
+.cvmain {
+  flex: 55%;
+  padding: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
 }

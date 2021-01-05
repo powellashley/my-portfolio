@@ -18,12 +18,40 @@ export default {
       },
     },
     {
-      name: 'author',
-      title: 'Author',
-      type: 'reference',
-      to: {type: 'author'},
+      name: "date",
+      type: "string",
     },
     {
+      name: "place",
+      type: "string",
+    },
+  {
+      name: "projectType",
+      title: "Project Type",
+      type: "string",
+      options: {
+          list: [
+              {value: "Personal", title: "Personal"},
+              {value: "Client", title: "Client"},
+              {value: "University", title: "University"},
+          ],
+      },
+  },
+  {
+      name: "areaofFocus",
+      title: "Area of Focus",
+      type: "string",
+      options: {
+          list: [
+              {value: "Decorative", title: "Decorative"},
+              {value: "Commercial", title: "Commercial"},
+              {value: "Architectural", title: "Architectural"},
+              {value: "Hospitality", title: "Hospitality"},
+              {value: "Transport", title: "Transport"},
+          ],
+      },
+  },
+  {
       name: 'mainImage',
       title: 'Main image',
       type: 'image',
@@ -31,35 +59,89 @@ export default {
         hotspot: true,
       },
     },
-    {
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
-    },
-    {
-      name: 'publishedAt',
-      title: 'Published at',
-      type: 'datetime',
-    },
-    {
+  {
       name: 'body',
       title: 'Body',
       type: 'blockContent',
-    },
-  ],
-
-  preview: {
-    select: {
-      title: 'title',
-      author: 'author.name',
-      media: 'mainImage',
-    },
-    prepare(selection) {
-      const {author} = selection
-      return Object.assign({}, selection, {
-        subtitle: author && `by ${author}`,
-      })
-    },
   },
+  {
+      name: 'bodyImage',
+      title: 'Body image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+  },
+  {
+      name: "bodyImagetext",
+      type: "text",
+  },
+  {
+      name: 'body2',
+      title: 'Body2',
+      type: 'blockContent',
+  },
+  // Slideshow Images
+  {
+      name: 'galleryImage1',
+      title: 'Gallery 1 image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+  },
+  {
+    name: "caption1",
+    type: "text",
+  },
+  {
+      name: 'galleryImage2',
+      title: 'Gallery 2 image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+  },
+  {
+    name: "caption2",
+    type: "text",
+  },
+  {
+      name: 'galleryImage3',
+      title: 'Gallery 3 image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+  },
+  {
+    name: "caption3",
+    type: "text",
+  },
+  {
+    name: 'galleryImage4',
+    title: 'Gallery 4 image',
+    type: 'image',
+    options: {
+      hotspot: true,
+    },
+},
+{
+  name: "caption4",
+  type: "text",
+},
+  // end of slideshow images 
+  {
+      name: "tags",
+      type: "array",
+      of: [
+          {
+              type: "string",
+          },
+      ],
+      options: {
+          layout: "tags",
+      },
+  },
+],
 }
