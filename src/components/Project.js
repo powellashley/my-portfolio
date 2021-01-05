@@ -26,8 +26,6 @@ export default function Project() {
         .catch(console.error);
     }, []);
 
-    if (!projectData) return <div class="loader"></div>;
-
     return(
         <main>
             <section class="blogbody">

@@ -22,8 +22,6 @@ export default function Home() {
         .catch(console.error);
     }, []);
 
-    if (!homeData) return <div class="loader"></div>;
-
     return (
         <main class="body">
             <section>

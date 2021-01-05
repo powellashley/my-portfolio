@@ -30,8 +30,6 @@ export default function About() {
         .then((data) => setAboutData(data))
         .catch(console.error);
     }, []);
-    
-    if (!aboutData) return <div class="loader"></div>;
 
     return (
         <main>

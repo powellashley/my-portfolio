@@ -30,8 +30,6 @@ export default function Resume(){
         .catch(console.error);
     }, []);
 
-    if (!resumeData) return <div class="loader"></div>;
-
     return(
         <main>
         

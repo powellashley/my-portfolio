@@ -23,8 +23,6 @@ export default function Post() {
         .catch(console.error);
     }, []);
 
-    if (!postData) return <div class="loader"></div>;
-
     return(
         <main>
             <section class="postbody">
