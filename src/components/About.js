@@ -47,6 +47,7 @@ export default function About() {
                             <img 
                                 class="aboutmepgImg" 
                                 src={about.aboutpgImage.asset.url}
+                                alt="picture of me"
                             />
                         <div class="aboutmefooter">
                             <h1>Hi there, I'm Ashley</h1>

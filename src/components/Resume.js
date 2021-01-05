@@ -59,10 +59,10 @@ export default function Resume(){
                                         <br />
                                         <div Class='Socials' className="inline-flex">
                                             <div Class='socialcolumn'>
-                                                <a href="https://www.instagram.com/ashleyjamescreative/" className="mr-4" target="_blank" rel="noreferrer noopener"><img src='https://uploads-ssl.webflow.com/5eebd8c985e3ccd7ecc96f67/5fe1e49c1539418585831163_iconfinder_SocialMedia_Instagram-Outline_2959748%402x.png'/></a>
+                                                <a href="https://www.instagram.com/ashleyjamescreative/" className="mr-4" target="_blank" rel="noreferrer noopener"><img src='https://uploads-ssl.webflow.com/5eebd8c985e3ccd7ecc96f67/5fe1e49c1539418585831163_iconfinder_SocialMedia_Instagram-Outline_2959748%402x.png' alt="Link to my Instagram"/></a>
                                             </div>
                                             <div Class='socialcolumn'>
-                                                <a href="https://www.linkedin.com/in/ashley-powell-98000719a/" className="mr-4" target="_blank" rel="noreferrer noopener"><img src='https://uploads-ssl.webflow.com/5eebd8c985e3ccd7ecc96f67/5fe1e49ca32fa9587c4d906d_iconfinder_SocialMedia_LinkedIn-Outline_2959747%402x.png'/></a>
+                                                <a href="https://www.linkedin.com/in/ashley-powell-98000719a/" className="mr-4" target="_blank" rel="noreferrer noopener"><img src='https://uploads-ssl.webflow.com/5eebd8c985e3ccd7ecc96f67/5fe1e49ca32fa9587c4d906d_iconfinder_SocialMedia_LinkedIn-Outline_2959747%402x.png' alt="Link to my LinkedIn"/></a>
                                             </div>
                                         </div>
                                     </div>
@@ -88,7 +88,9 @@ export default function Resume(){
                                             />
                                         </div>
                                         <div class="cvimagestack">
-                                            <img src={resume.cvImage1.asset.url}/>
+                                            <img src={resume.cvImage1.asset.url}
+                                            alt="CV Image showing my work"
+                                            />
                                         </div>
                                     </div>
                                     <div className="cvmain prose prose-sm md:prose-xl lg:prose-2xl">
